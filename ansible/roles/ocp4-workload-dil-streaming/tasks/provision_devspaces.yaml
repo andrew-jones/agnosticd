@@ -52,14 +52,14 @@
     state: present
     resource_definition: "{{ lookup('template', 'devspaces-cluster.yaml.j2') }}"
 
-- name: Wait for OpenShift Dev Spaces to be running
-  uri:
-    url: https://devspaces.{{ route_subdomain }}/devfile-registry
-    status_code: '200'
-  register: result
-  until: result.status == 200
-  retries: 120
-  delay: 50
+# - name: Wait for OpenShift Dev Spaces to be running
+#   uri:
+#     url: https://devspaces.{{ route_subdomain }}/devfile-registry
+#     status_code: '200'
+#   register: result
+#   until: result.status == 200
+#   retries: 120
+#   delay: 50
 
 - name: Add users and create workspaces
   include_tasks: user_workspace.yaml
