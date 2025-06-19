@@ -21,6 +21,7 @@
         hostname: "{{ _deployer_domain }}"
         guid: "{{ guid }}"
         namespace: "{{ _showroom_namespace }}"
+        createNamespace: "{{ ocp4_workload_showroom_deployment_create_namespace }}"
 
       layout_name: "{{ ocp4_workload_showroom_layout_name }}"
 
