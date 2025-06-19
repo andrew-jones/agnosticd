@@ -20,6 +20,7 @@
         target: "{{ ocp4_workload_showroom_deployment_target }}"
         hostname: "{{ _deployer_domain }}"
         guid: "{{ guid }}"
+        namespace: "{{ _showroom_namespace }}"
 
       layout_name: "{{ ocp4_workload_showroom_layout_name }}"
 
