@@ -41,7 +41,7 @@
           port: "{{ _showroom_user_data.bastion_ssh_port | default(22) }}"
 
         helloworld:
-          enable: "{{ ocp4_workload_showroom_services_terminal_enable }}"
+          enable: "{{ ocp4_workload_showroom_services_helloworld_enable }}"
 
   register: r_helm_templates
 
