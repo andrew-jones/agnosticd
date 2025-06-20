@@ -101,17 +101,17 @@ ocp4_workload_showroom_use_sandbox_domain: false
 
 ########################
 
-ocp4_workload_showroom_services_terminal_enable: false
+ocp4_workload_showroom_services_terminal_enable: "false"
 ocp4_workload_showroom_services_terminal_command: ""
 ocp4_workload_showroom_services_terminal_terminal_command: ""
-ocp4_workload_showroom_services_terminal2_enable: false
+ocp4_workload_showroom_services_terminal2_enable: "false"
 ocp4_workload_showroom_services_terminal2_command: ""
 ocp4_workload_showroom_services_terminal2_terminal_command: ""
-ocp4_workload_showroom_services_terminal3_enable: false
+ocp4_workload_showroom_services_terminal3_enable: "false"
 ocp4_workload_showroom_services_terminal3_command: ""
 ocp4_workload_showroom_services_terminal3_terminal_command: ""
 
-ocp4_workload_showroom_services_helloworld_enable: false
+ocp4_workload_showroom_services_helloworld_enable: "false"
 
 # defaults for _showroom_user_data so env destroys don't fail
 _showroom_user_data:
