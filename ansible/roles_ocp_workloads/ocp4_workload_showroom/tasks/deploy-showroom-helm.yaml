@@ -34,20 +34,20 @@
           antoraPlaybook: "{{ ocp4_workload_showroom_services_content_antora_playbook }}"
           data: "{{ _showroom_vars | to_nice_yaml(width=1337, default_style='\"') }}"
         terminal:
-          enable: "{{ ocp4_workload_showroom_services_terminal_enable }}"
+          enable: {{ ocp4_workload_showroom_services_terminal_enable }}
           command: "{{ ocp4_workload_showroom_services_terminal_command }}"
           terminal_command: "{{ ocp4_workload_showroom_services_terminal_terminal_command }}"
         terminal2:
-          enable: "{{ ocp4_workload_showroom_services_terminal2_enable }}"
+          enable: {{ ocp4_workload_showroom_services_terminal2_enable }}
           command: "{{ ocp4_workload_showroom_services_terminal2_command }}"
           terminal_command: "{{ ocp4_workload_showroom_services_terminal2_terminal_command }}"
         terminal3:
-          enable: "{{ ocp4_workload_showroom_services_terminal3_enable }}"
+          enable: {{ ocp4_workload_showroom_services_terminal3_enable }}
           command: "{{ ocp4_workload_showroom_services_terminal3_command }}"
           terminal_command: "{{ ocp4_workload_showroom_services_terminal3_terminal_command }}"
 
         helloworld:
-          enable: "{{ ocp4_workload_showroom_services_helloworld_enable }}"
+          enable: {{ ocp4_workload_showroom_services_helloworld_enable }}
 
   register: r_helm_templates
 
